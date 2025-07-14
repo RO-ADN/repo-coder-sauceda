@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/* font-family: "Nunito Sans", sans-serif; */
+
+body{
+    font-family: "Nunito Sans", sans-serif; /* en este curso se utilizara google fonts */
+    background-color: rgb(242, 235, 227);
+}
+h1{
+    color: red;  
+}
+
+p{
+    color: green;
+    font-size: 24px;
+}
+
+.p-footer{
+    color: brown;
+}
+
+/* Ejemplo de id pero NO SE ESTILA CON ID en este curso, QUEDA PARA JAVASCRIPT
+#licenciaturas{
+    color: rgb(255, 0, 200);
+    font-size: 20px;
+} */
+
+.nav-li{
+    list-style-type: none; /* Elimina los puntos de la lista */
+}
+.nav-link{
+    color: black;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+div {
+    color: green;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: #b6d9fe;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.container {
+    display: flex;
+}
+
+.main-content {
+    width: 50%;
+    background-color: #eaeaea;
+    padding: 20px;
+}
+
+.article {
+    width: 50%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.a {
+    color: blue;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    background-color: lightsalmon;
+}
+
+.p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5; /* Mejora la legibilidad del texto */
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid; /* Define el contenedor como un grid */
+    grid-template-columns: 1fr 2fr 1fr; /* Define tres columnas con la pantalla fraccionada*/
+    grid-template-rows: 100px 200px;/* Define las filas y sus alturas */
+    grid-template-areas: /* Define las áreas del grid */
+        "header header header"
+        "sidebar main .";
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: start;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+
+
+/* Diseño responsive*/
+body { 
+    font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+    }
+
+    .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+    }
+
+    .navbar a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+    }
+
+    .container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+    }
+
+    img {
+            width: 100%;
+            height: auto;
+    }
+
+        /* Media query para tabletas */
+    @media (min-width: 600px) {
+            body {
+                font-size: 18px;
+                padding: 20px;
+            }
+
+    .navbar {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+    .container {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        /* Media query para computadoras de escritorio */
+    @media (min-width: 1024px) {
+        body {
+                font-size: 20px;
+                padding: 30px;
+            }
+            img {
+                width: 50%;
+            }
+}
+
+/* Modificador del bloque */
+.grid-item--featured {
+  border-color: gold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modificador del elemento */
+.grid-item__button--disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
