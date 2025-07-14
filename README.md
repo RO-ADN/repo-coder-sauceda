@@ -1,0 +1,1 @@
+Hola, no tuve oportunidad de detallar tanto el proyecto, en estas semanas tuve mucho trabajo, pero creo entrego todo lo solicitado, igual sigo puliendo para mejorar. El acumulado de información es maravilloso, creo que ahora en realidad veo la importancia de tener una mejor configuración de la pagina desde el inicio.
